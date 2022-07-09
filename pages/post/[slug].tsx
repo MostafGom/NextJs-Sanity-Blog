@@ -61,7 +61,7 @@ function Post({ post }: Props) {
 
                 <div className="mt-8">
                     <PortableText
-                        value={post.body}
+                        value={post.body || []}
                         components={helperComponents}
                     />
                 </div>
