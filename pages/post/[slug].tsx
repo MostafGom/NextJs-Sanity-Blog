@@ -3,7 +3,7 @@ import { GetStaticPaths } from "next"
 import Header from "../../components/Header"
 import { sanityClient, urlFor } from "../../sanity"
 import { Post } from '../../typings'
-import { helperComponents } from '../../components/helperComponents'
+// import { helperComponents } from '../../components/helperComponents'
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useState } from "react"
 
@@ -62,7 +62,7 @@ function Post({ post }: Props) {
                 <div className="mt-8">
                     <PortableText
                         value={post.body || []}
-                        components={helperComponents}
+                    // components={helperComponents}
                     />
                 </div>
             </article>
